@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/VS_WorkSpace/Algorithm/src/test.cpp
+test.hpp
+E:/VS_WorkSpace/Algorithm/src/test.hpp
+
+E:/VS_WorkSpace/Algorithm/src/test.hpp
+iostream
+-
+
