@@ -57,10 +57,24 @@ include src/CMakeFiles/srclib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/srclib.dir/flags.make
 
+src/CMakeFiles/srclib.dir/Divide.cpp.obj: src/CMakeFiles/srclib.dir/flags.make
+src/CMakeFiles/srclib.dir/Divide.cpp.obj: src/CMakeFiles/srclib.dir/includes_CXX.rsp
+src/CMakeFiles/srclib.dir/Divide.cpp.obj: ../src/Divide.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:/VS_WorkSpace/Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/srclib.dir/Divide.cpp.obj"
+	cd E:/VS_WorkSpace/Algorithm/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/srclib.dir/Divide.cpp.obj -c E:/VS_WorkSpace/Algorithm/src/Divide.cpp
+
+src/CMakeFiles/srclib.dir/Divide.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/srclib.dir/Divide.cpp.i"
+	cd E:/VS_WorkSpace/Algorithm/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:/VS_WorkSpace/Algorithm/src/Divide.cpp > CMakeFiles/srclib.dir/Divide.cpp.i
+
+src/CMakeFiles/srclib.dir/Divide.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/srclib.dir/Divide.cpp.s"
+	cd E:/VS_WorkSpace/Algorithm/build/src && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:/VS_WorkSpace/Algorithm/src/Divide.cpp -o CMakeFiles/srclib.dir/Divide.cpp.s
+
 src/CMakeFiles/srclib.dir/test.cpp.obj: src/CMakeFiles/srclib.dir/flags.make
 src/CMakeFiles/srclib.dir/test.cpp.obj: src/CMakeFiles/srclib.dir/includes_CXX.rsp
 src/CMakeFiles/srclib.dir/test.cpp.obj: ../src/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:/VS_WorkSpace/Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/srclib.dir/test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:/VS_WorkSpace/Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/srclib.dir/test.cpp.obj"
 	cd E:/VS_WorkSpace/Algorithm/build/src && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/srclib.dir/test.cpp.obj -c E:/VS_WorkSpace/Algorithm/src/test.cpp
 
 src/CMakeFiles/srclib.dir/test.cpp.i: cmake_force
@@ -73,15 +87,17 @@ src/CMakeFiles/srclib.dir/test.cpp.s: cmake_force
 
 # Object files for target srclib
 srclib_OBJECTS = \
+"CMakeFiles/srclib.dir/Divide.cpp.obj" \
 "CMakeFiles/srclib.dir/test.cpp.obj"
 
 # External object files for target srclib
 srclib_EXTERNAL_OBJECTS =
 
+../lib/libsrclib.a: src/CMakeFiles/srclib.dir/Divide.cpp.obj
 ../lib/libsrclib.a: src/CMakeFiles/srclib.dir/test.cpp.obj
 ../lib/libsrclib.a: src/CMakeFiles/srclib.dir/build.make
 ../lib/libsrclib.a: src/CMakeFiles/srclib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:/VS_WorkSpace/Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../lib/libsrclib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:/VS_WorkSpace/Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../lib/libsrclib.a"
 	cd E:/VS_WorkSpace/Algorithm/build/src && $(CMAKE_COMMAND) -P CMakeFiles/srclib.dir/cmake_clean_target.cmake
 	cd E:/VS_WorkSpace/Algorithm/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/srclib.dir/link.txt --verbose=$(VERBOSE)
 

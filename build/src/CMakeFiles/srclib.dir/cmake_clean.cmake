@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../../lib/libsrclib.a"
   "../../lib/libsrclib.pdb"
+  "CMakeFiles/srclib.dir/Divide.cpp.obj"
   "CMakeFiles/srclib.dir/test.cpp.obj"
 )
 

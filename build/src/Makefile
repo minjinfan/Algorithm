@@ -125,6 +125,33 @@ srclib/fast:
 	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/build
 .PHONY : srclib/fast
 
+Divide.obj: Divide.cpp.obj
+
+.PHONY : Divide.obj
+
+# target to build an object file
+Divide.cpp.obj:
+	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/Divide.cpp.obj
+.PHONY : Divide.cpp.obj
+
+Divide.i: Divide.cpp.i
+
+.PHONY : Divide.i
+
+# target to preprocess a source file
+Divide.cpp.i:
+	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/Divide.cpp.i
+.PHONY : Divide.cpp.i
+
+Divide.s: Divide.cpp.s
+
+.PHONY : Divide.s
+
+# target to generate assembly for a file
+Divide.cpp.s:
+	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/Divide.cpp.s
+.PHONY : Divide.cpp.s
+
 test.obj: test.cpp.obj
 
 .PHONY : test.obj
@@ -161,6 +188,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... srclib"
 	@echo "... rebuild_cache"
+	@echo "... Divide.obj"
+	@echo "... Divide.i"
+	@echo "... Divide.s"
 	@echo "... test.obj"
 	@echo "... test.i"
 	@echo "... test.s"
