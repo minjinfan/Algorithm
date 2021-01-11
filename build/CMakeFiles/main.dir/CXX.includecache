@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/VS_WorkSpace/Algorithm/main.cpp
+iostream
+-
+cstdlib
+-
+ctime
+-
+src/Divide.h
+E:/VS_WorkSpace/Algorithm/src/Divide.h
+
+E:/VS_WorkSpace/Algorithm/src/Divide.h
+iostream
+-
+vector
+-
+

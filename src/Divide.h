@@ -12,6 +12,7 @@ public:
 
     // 合并排序
     void MergeSort(std::vector<int> &a, int n);
+    void MergeSort_up_to_down(std::vector<int> &a, int low, int high);
 
     void disp_(int a[], int n);
     void disp(std::vector<int> &a, int n);

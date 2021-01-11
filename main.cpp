@@ -28,7 +28,8 @@ int main()
 
     printf("before:  ");
     DC.disp(ivec, ivec.size());
-    DC.MergeSort(ivec, ivec.size());
+    // DC.MergeSort(ivec, ivec.size());
+    DC.MergeSort_up_to_down(ivec, 0, ivec.size());
     printf("after:  ");
     DC.disp(ivec, ivec.size());
 

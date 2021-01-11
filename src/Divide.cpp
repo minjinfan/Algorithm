@@ -111,4 +111,16 @@ void Divide::MergePass(std::vector<int> &a, int length, int n)
         Merge(a, i, i + length - 1, n - 1);
 }
 
+void Divide::MergeSort_up_to_down(std::vector<int> &a, int low, int high)
+{
+    int n = a.size();
+    int mid;
+    if(low < high){
+        mid = (low + high) / 2;
+        MergeSort_up_to_down(a, low, mid);
+        MergeSort_up_to_down(a, mid + 1, high);
+        Merge(a, low, mid, high);
+    }
+}
+
 #endif
