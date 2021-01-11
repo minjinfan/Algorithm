@@ -3,7 +3,7 @@
 #define MERGESORT
 using namespace std;
 
-void Divide::disp(vector<int> &a, int n)
+void Divide::disp(vector<int> &a)
 {
     for(auto i : a){
         cout << i << "  ";
@@ -124,3 +124,36 @@ void Divide::MergeSort_up_to_down(std::vector<int> &a, int low, int high)
 }
 
 #endif
+
+int Divide::QuickSelect(std::vector<int> &ivec, int s, int t, int k)
+{
+    int i = s, j = t;
+    int tmp;
+    
+    if(s < t){
+        tmp = ivec[s];
+
+        while(i != j){
+
+            while(j > i && ivec[j] >= tmp)
+                --j;
+            ivec[i] = ivec[j];
+
+            while(i < j && ivec[i] <= tmp)
+                ++i;
+            ivec[j] = ivec[i];
+
+        }
+        
+        ivec[i] = tmp;
+        if(i == k - 1)  return ivec[i];
+        else if(k - 1 < i)  QuickSelect(ivec, s, i - 1, k);
+        else if(k - 1 > i)  QuickSelect(ivec, i + 1, t, k);
+        
+    }
+    else if(s == t && s == k - 1)
+    {
+        return ivec[s];
+    }
+
+}

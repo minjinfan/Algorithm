@@ -6,35 +6,20 @@ using namespace std;
 
 int main()
 {
-    Divide dc;
-    int n = 10;
-    int a[] = {2,5,1,7,10,6,9,4,3,8};
-    printf("before:  ");
-    dc.disp_(a, n);
-    dc.QuickSort(a, 0, n - 1);
-    printf("after:  ");
-    dc.disp_(a, n);
-
-    cout << endl << endl;
-
     Divide DC;
     int n2 = 10;
     vector<int> ivec(n2);
-
     srand( (int)time(NULL) );
     for(int i = 0; i < n2; ++i){
         ivec[i] = rand() % 100;
     }
 
-    printf("before:  ");
-    DC.disp(ivec, ivec.size());
-    // DC.MergeSort(ivec, ivec.size());
-    DC.MergeSort_up_to_down(ivec, 0, ivec.size());
-    printf("after:  ");
-    DC.disp(ivec, ivec.size());
-
-    // getchar();
-
+    printf("测试数组为：\n");
+    DC.disp(ivec);
+    int find_k = rand() % 10 + 1;   // (s ... t]
+    int res = DC.QuickSelect(ivec, 0, ivec.size(), find_k);
+    printf("第%d小的元素为:  %d\n", find_k, res);
+    
     cout << "Hello World !" << endl;
     return 0;
 }
