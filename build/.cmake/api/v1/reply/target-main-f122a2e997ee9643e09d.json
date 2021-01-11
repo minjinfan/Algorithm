@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "E:/VS_WorkSpace/Algorithm/bin/main.exe"
+			"path" : "main.exe"
 		},
 		{
-			"path" : "E:/VS_WorkSpace/Algorithm/bin/main.pdb"
+			"path" : "main.pdb"
 		}
 	],
 	"backtrace" : 1,

@@ -1,6 +1,25 @@
-#include"Divide.hpp"
+#include"Divide.h"
+#define QUICKSORT
+#define MERGESORT
 using namespace std;
 
+void Divide::disp(vector<int> &a, int n)
+{
+    for(auto i : a){
+        cout << i << "  ";
+    }
+    cout << endl;
+}
+
+void Divide::disp_(int a[], int n)
+{
+    for(int i = 0; i < n; ++i){
+        printf("%d  ", a[i]);
+    }
+    printf("\n");
+}
+
+#ifdef QUICKSORT    
 void Divide::QuickSort(int a[], int s, int t)  // 对a[s..t]元素序列进行递增排序
 {
     if(s < t)
@@ -30,10 +49,66 @@ int Divide::Partition(int a[], int s, int t)    // 划分算法
     return i;
 }
 
-void Divide::disp(int a[], int n)
+#endif
+
+/********************************************************   合并排序   *************************************************************/ 
+#ifdef MERGESORT
+
+void Divide::Merge(std::vector<int> &a, int low, int mid, int high)
 {
-    for(int i = 0; i < n; ++i){
-        printf("%d  ", a[i]);
+    // 将 a[low ... mid] 和 a[mid+1 ... high] 两个相邻的有序归并为一个有序子列 a[low ... high]
+    std::vector<int> tmpa(high - low + 1);
+    
+    int i = low, j = mid + 1, k = 0;
+    while(i <= mid && j <= high){    // 两个子表均未扫描完成
+        if(a[i] <= a[j])
+        {
+            tmpa[k] = a[i];
+            ++i;
+            ++k;
+        }
+        else{
+            tmpa[k] = a[j];
+            ++j;
+            ++k;
+        }
     }
-    printf("\n");
+
+    // 将未扫描完的子列复制过去
+    while(i <= mid){
+        tmpa[k] = a[i];
+        ++i;
+        ++k;
+    }
+    while(j <= high){
+        tmpa[k] = a[j];
+        ++j;
+        ++k;
+    }
+
+    // 将 tmpa 复制回 a 
+    for(k = 0, i = low; i <= high; ++k, ++i){
+        a[i] = tmpa[k];
+    }
+
 }
+
+void Divide::MergeSort(std::vector<int> &a, int n)
+{
+    for(int length = 1; length < n; length = 2 * length){
+        MergePass(a, length, n);
+    }
+}
+
+void Divide::MergePass(std::vector<int> &a, int length, int n)
+{
+    int i;
+    for(int i = 0; i + 2 * length <  n; i = i + 2 * length){
+        Merge(a, i, i + length - 1, i + 2 * length - 1);
+    }
+
+    if(i + length - 1 < n)
+        Merge(a, i, i + length - 1, n - 1);
+}
+
+#endif

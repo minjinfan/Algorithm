@@ -1,0 +1,9 @@
+./build/*
+*.so
+*.sln
+*.exe
+*.o
+*.a
+*.obj
+*.log
+
