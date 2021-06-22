@@ -4,6 +4,10 @@
 src/CMakeFiles/srclib.dir/Divide.cpp.obj
  E:/VS_WorkSpace/Algorithm/src/Divide.cpp
  E:/VS_WorkSpace/Algorithm/src/Divide.h
+src/CMakeFiles/srclib.dir/SortAlgorithm.cpp.obj
+ E:/VS_WorkSpace/Algorithm/src/Common.h
+ E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.cpp
+ E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.hpp
 src/CMakeFiles/srclib.dir/test.cpp.obj
  E:/VS_WorkSpace/Algorithm/src/test.cpp
  E:/VS_WorkSpace/Algorithm/src/test.hpp

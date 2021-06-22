@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/VS_WorkSpace/Algorithm/src/Divide.cpp" "E:/VS_WorkSpace/Algorithm/build/src/CMakeFiles/srclib.dir/Divide.cpp.obj"
+  "E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.cpp" "E:/VS_WorkSpace/Algorithm/build/src/CMakeFiles/srclib.dir/SortAlgorithm.cpp.obj"
   "E:/VS_WorkSpace/Algorithm/src/test.cpp" "E:/VS_WorkSpace/Algorithm/build/src/CMakeFiles/srclib.dir/test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

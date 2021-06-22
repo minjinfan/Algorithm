@@ -85,7 +85,7 @@ all: CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/VS_WorkSpace/Algorithm/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/VS_WorkSpace/Algorithm/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:/VS_WorkSpace/Algorithm/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -125,7 +125,7 @@ src/clean: src/CMakeFiles/srclib.dir/clean
 src/CMakeFiles/srclib.dir/all:
 	$(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/depend
 	$(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:/VS_WorkSpace/Algorithm/build/CMakeFiles --progress-num=3,4,5 "Built target srclib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:/VS_WorkSpace/Algorithm/build/CMakeFiles --progress-num=3,4,5,6 "Built target srclib"
 .PHONY : src/CMakeFiles/srclib.dir/all
 
 # Include target in all.
@@ -135,7 +135,7 @@ all: src/CMakeFiles/srclib.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/srclib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/VS_WorkSpace/Algorithm/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/VS_WorkSpace/Algorithm/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/srclib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:/VS_WorkSpace/Algorithm/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/srclib.dir/rule

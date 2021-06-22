@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-E:/VS_WorkSpace/Algorithm/src/Divide.cpp
-Divide.h
-E:/VS_WorkSpace/Algorithm/src/Divide.h
+E:/VS_WorkSpace/Algorithm/src/Common.h
+iostream
+-
+vector
+-
 
-E:/VS_WorkSpace/Algorithm/src/Divide.h
+E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.cpp
+SortAlgorithm.hpp
+E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.hpp
+Common.h
+E:/VS_WorkSpace/Algorithm/src/Common.h
+
+E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.hpp
 iostream
 -
 vector

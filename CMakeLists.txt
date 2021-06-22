@@ -19,7 +19,7 @@ add_subdirectory(src)         # source file search the catalog
 
 
 # 编译成可执行文件
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)       ###### 输出可执行文件目录
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)       ###### 输出可执行文件目录
 add_executable(main ${DIR_MAIN})
 
 # 链接hellolib库，注意下面子目录src的CMakeLists

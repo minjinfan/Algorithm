@@ -152,6 +152,33 @@ Divide.cpp.s:
 	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/Divide.cpp.s
 .PHONY : Divide.cpp.s
 
+SortAlgorithm.obj: SortAlgorithm.cpp.obj
+
+.PHONY : SortAlgorithm.obj
+
+# target to build an object file
+SortAlgorithm.cpp.obj:
+	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/SortAlgorithm.cpp.obj
+.PHONY : SortAlgorithm.cpp.obj
+
+SortAlgorithm.i: SortAlgorithm.cpp.i
+
+.PHONY : SortAlgorithm.i
+
+# target to preprocess a source file
+SortAlgorithm.cpp.i:
+	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/SortAlgorithm.cpp.i
+.PHONY : SortAlgorithm.cpp.i
+
+SortAlgorithm.s: SortAlgorithm.cpp.s
+
+.PHONY : SortAlgorithm.s
+
+# target to generate assembly for a file
+SortAlgorithm.cpp.s:
+	cd E:/VS_WorkSpace/Algorithm/build && $(MAKE) -f src/CMakeFiles/srclib.dir/build.make src/CMakeFiles/srclib.dir/SortAlgorithm.cpp.s
+.PHONY : SortAlgorithm.cpp.s
+
 test.obj: test.cpp.obj
 
 .PHONY : test.obj
@@ -191,6 +218,9 @@ help:
 	@echo "... Divide.obj"
 	@echo "... Divide.i"
 	@echo "... Divide.s"
+	@echo "... SortAlgorithm.obj"
+	@echo "... SortAlgorithm.i"
+	@echo "... SortAlgorithm.s"
 	@echo "... test.obj"
 	@echo "... test.i"
 	@echo "... test.s"

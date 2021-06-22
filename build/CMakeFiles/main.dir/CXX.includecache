@@ -13,10 +13,20 @@ cstdlib
 -
 ctime
 -
-src/Divide.h
-E:/VS_WorkSpace/Algorithm/src/Divide.h
+vector
+-
+src/Common.h
+E:/VS_WorkSpace/Algorithm/src/Common.h
+src/SortAlgorithm.hpp
+E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.hpp
 
-E:/VS_WorkSpace/Algorithm/src/Divide.h
+E:/VS_WorkSpace/Algorithm/src/Common.h
+iostream
+-
+vector
+-
+
+E:/VS_WorkSpace/Algorithm/src/SortAlgorithm.hpp
 iostream
 -
 vector
